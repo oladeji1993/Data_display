@@ -1,0 +1,38 @@
+
+<div class="recent-grid" >
+    <div class="projects">
+        <div class="card">
+            <div class="card-header">
+                <h3>PEOPLE</h3>
+            </div>
+            <div class="card-body"  >
+                <div class="table-responsive">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Birth_Year</td>    
+                                <td>Gender</td>
+                                <td>Hair_color</td>
+                                <td>Height</td>    
+                                <td>Mass</td>
+                                <td>Skin_color</td>        
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let crowd of crowds" (click)="openPeopleDetails(crowd.url)">
+                                <td >{{crowd.name}}</td>
+                                <td>{{crowd.birth_year}}</td>
+                                <td>{{crowd.gender}}</td>
+                                <td>{{crowd.hair_color}}</td>
+                                <td>{{crowd.eye_color}}</td>
+                                <td>{{crowd.height}}</td>
+                                <td>{{crowd.skin_color}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

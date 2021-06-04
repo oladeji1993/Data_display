@@ -1,0 +1,41 @@
+
+<div class="recent-grid" >
+    <div class="projects">
+        <div class="card">
+            <div class="card-header">
+                <h3>PLANET</h3>
+            </div>
+            <div class="card-body"  >
+                <div class="table-responsive">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Climate</td>
+                                <td>Diameter</td>    
+                                <td>Gravity</td>
+                                <td>Orbital_period</td>
+                                <td>Population</td>    
+                                <td>Rotation_period</td>
+                                <td>Surface</td>  
+                                <td>Terrain</td>          
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let planet of planets" (click)="openPlanetDetails(planet.url)">
+                                <td>{{planet.name}}</td>
+                                <td>{{planet.climate}}</td>
+                                <td>{{planet.gravity}}</td>
+                                <td>{{planet.orbital_period}}</td>
+                                <td>{{planet.population}}</td>
+                                <td>{{planet.rotation_period}}</td>
+                                <td>{{planet.surface}}</td>
+                                <td>{{planet.terrain}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

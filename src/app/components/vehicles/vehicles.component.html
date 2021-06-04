@@ -1,0 +1,42 @@
+
+<div class="recent-grid" >
+    <div class="projects">
+        <div class="card">
+            <div class="card-header">
+                <h3>PLANET</h3>
+            </div>
+            <div class="card-body"  >
+                <div class="table-responsive">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Manufacturer</td>
+                                <td>Cargo_capacity</td>    
+                                <td>Crew</td>
+                                <td>Consumables</td>
+                                <td>Max_atmosphering_speed</td>    
+                                <td>Model</td>
+                                <td>Passengers</td>
+                                <td>cost_in_credits</td>              
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let vehicle of vehicles"  (click)="openVehicleDetails(vehicle.url)">
+                                <td>{{vehicle.name}}</td>
+                                <td>{{vehicle.manufacturer}}</td>
+                                <td>{{vehicle.cargo_capacity}}</td>
+                                <td>{{vehicle.crew}}</td>
+                                <td>{{vehicle.consumables}}</td>
+                                <td>{{vehicle.max_atmosphering_speed}}</td>
+                                <td>{{vehicle.model}}</td>
+                                <td>{{vehicle.passengers}}</td>
+                                <td>{{vehicle.cost_in_credits}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

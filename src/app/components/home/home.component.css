@@ -1,0 +1,191 @@
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top:1rem
+}
+
+.card-single{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding:2rem;
+    border-radius:2px;
+}
+
+.card-single div:last-child span{
+    color: #192cc2;;
+    font-size: 1rem;
+}
+
+.card-single div:first-child span{
+    color:var(--text-grey)
+}
+
+.card-single:last-child{
+    background: #192cc2; ;
+}
+
+
+.card-single:last-child h1,
+.card-single:last-child
+ div:first-child span,
+.card-single:last-child div:last-child span{
+    color:#fff
+   
+}
+
+
+table{
+    border-collapse: collapse;
+}
+
+.recent-grid{
+    /* margin-top:3.5rem; */
+    padding: 20px;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 100% auto;
+
+}
+
+.card{
+   background:#fff; 
+   border-radius: 5px;
+}
+
+.card-body,
+.card-header{
+  padding: 1rem 
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+
+}
+
+
+.card-header button{
+    background: #192cc2;;
+    border-radius: 10px;
+    color:#fff;
+    font-size: .8rem;
+    padding:.5rem 1rem;
+    border:1px solid #192cc2;
+}
+
+
+thead tr{
+    border-top: 1px solid #f0f0f0 ;
+    border-bottom: 2px solid #f0f0f0 ;
+}
+
+thead td{
+    font-weight:700 ;
+}
+
+td{
+    padding:.5rem 1rem;
+    font-size:.9rem;
+    color:#222;
+}
+
+td .status{
+    display: inline-block;
+    height:10px;
+    width:10px;
+    border-radius:50%;
+    margin-right:1rem;
+}
+
+tr td:last-child{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.customer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+.info img{
+   border-radius: 50%;
+   margin-right: 1rem; 
+}
+
+
+.info h4{
+    font-size: .8rem;
+    font-weight: 700;
+    color:#222;
+}
+
+.info small{
+    font-weight:600;
+    color: gray;
+}
+
+.contact i{
+    font-size:1.5rem;
+    display:inline-block;
+    margin-left:1rem;
+}
+
+
+
+.fulldetails td a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+/* TABLE STYLING */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 110%;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  tr:hover {
+    background-color: #fde7d1;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
